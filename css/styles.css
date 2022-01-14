@@ -264,17 +264,12 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.our-team-section {
-  background-color: var(--darker-bgnd-color);
-}
-
 .our-activity-section {
   padding-bottom: 94px;
 }
 
-.our-activity-title,
-.our-team-section-title,
-.our-customers-section-title {
+/* .our-activity-title, */
+.our-team-section-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.15;
@@ -284,6 +279,7 @@ body {
 }
 
 .our-activity-images-list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
@@ -308,12 +304,12 @@ body {
   width: 100%;
 }
 
-.our-activity-images-list,
-.our-team-member-list {
-  list-style: none;
+.our-team-section {
+  background-color: var(--darker-bgnd-color);
 }
 
 .our-team-member-list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
@@ -383,6 +379,15 @@ body {
 
 .team-member-social-link:hover .social-link-icon {
   fill: var(--main-bgnd-color);
+}
+
+.our-customers-section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  padding: 0px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .our-customers-list {
