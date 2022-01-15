@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
         
 </head>
-<body class="index-body">
+<body">
     
   <!--Header section-->
     <header>
@@ -410,45 +410,44 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-modal" data-modal-close>
-                <svg class="close-modal-cross" width="11" height="11">
+            <button type="button" class="modal__closeButton" data-modal-close>
+                <svg class="modal__closeIcon" width="11" height="11">
                     <use href="images/icons.svg#icon-closemodal"></use>
                 </svg>
             </button>
-            <b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
-            <form class="modal-form">
-                <label class="form-input-box">
+            <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="form">
+                <label class="form__inputBox">
                     Имя
-                    <input class="form-input" type="text" name="username">
-                    <!-- <span class="form-input-icon"></span> -->
-                    <svg class="form-input-icon">
+                    <input class="form__input" type="text" name="username">
+                    <svg class="form__inputIcon">
                         <use href="images/icons.svg#icon-modal-name"></use>
                     </svg>
                 </label>
-                <label class="form-input-box">
+                <label class="form__inputBox">
                     Телефон
-                    <input class="form-input" type="tel" name="user-phone" pattern="[0-9]{10}" title="0500505050">
-                    <svg class="form-input-icon">
+                    <input class="form__input" type="tel" name="user-phone" pattern="[0-9]{10}" title="0500505050">
+                    <svg class="form__inputIcon">
                         <use href="images/icons.svg#icon-modal-phone"></use>
                     </svg>
                 </label>
-                <label class="form-input-box">
+                <label class="form__inputBox">
                     Почта
-                    <input class="form-input" type="email" name="user-mail">
-                    <svg class="form-input-icon">
+                    <input class="form__input" type="email" name="user-mail">
+                    <svg class="form__inputIcon">
                         <use href="images/icons.svg#icon-modal-mail"></use>
                     </svg>
                 </label>
-                <label class="form-input-box">
+                <label class="form__inputBox">
                     Комментарий
-                    <textarea name="user-msg" class="form-message" placeholder="Введите текст"></textarea>
+                    <textarea class="form__comment" name="user-msg" placeholder="Введите текст"></textarea>
                 </label>
 
-                <input type="checkbox" class="checkbox" id="check-policy" name="policy-check">
-                <label for="check-policy" class="checkbox-box">Соглашаюсь с рассылкой и принимаю &nbsp; <a class="checkbox-link" href="#">Условия
+                <input class="form__checkbox" type="checkbox" id="check-policy" name="policy-check">
+                <label class="form__agreement" for="check-policy">Соглашаюсь с рассылкой и принимаю &nbsp; <a class="form__agreementLink" href="#">Условия
                 договора</a></label>
 
-                <button type="submit" class="form-submit">Отправить</button>
+                <button class="form__submit" type="submit">Отправить</button>
             </form>
         </div>
     </div>
